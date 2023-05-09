@@ -198,25 +198,24 @@ entradaObjeto (novosApelidos.nome, novosApelidos.apelidos[0],novosApelidos.apeli
 //4. O valor de `profissão`
 //5. O numero de caracteres do valor `profissão`
 
-const pessoa1 = {
-    nome: 'José',
+const pessoaUm = {
+    nome: 'João',
     idade: 50,
-    profissao: 'carpinteiro'
+    profissao: 'Administrador'
 }
 
-const pessoa2 = {
+const pessoaDois = {
     nome: 'Maria',
-    idade: 46,
-    profissao: 'arquiteta'
+    idade: 45,
+    profissao: 'Programadora'
 }
 
-function informacoes (nome, idade, profissao) {
-    var mensagem = `O nome da pessoa é ${nome}, este nome tem ${nome.length} caracteres. A idade da pessoa é de ${idade} anos, exerce a profissão de ${profissao}, o numero de caracteres da palavra ${profissao} é de ${profissao.length}.`;
-    return console.log(mensagem);
+function receberObjetos(objeto){
+    var pessoa = [objeto.nome, objeto.nome.length,objeto.idade,objeto.profissao,objeto.profissao.length];
+    return console.log(pessoa)
 }
 
-informacoes(pessoa1.nome, pessoa1.idade, pessoa1.profissao);
-informacoes(pessoa2.nome, pessoa2.idade, pessoa2.profissao);
+receberObjetos(pessoaUm);
 */
 
 /*
