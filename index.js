@@ -25,13 +25,28 @@ console.log('Assisti?',pearl['assisti']);
 //● Acesse e imprima no console as propriedades desse objeto, seguindo o modelo abaixo:
 //"O nome da pessoa é ___, ela tem ___ anos e gosta muito de___."
 
-let pessoa = {
-    nome: prompt('Digite seu nome:'),
-    idade: Number(prompt('Digite sua idade')),
-    generoMusical: prompt('Digite seu gênero musical favorito:')
+const end1 = {
+    rua: 'Rua 01',
+    bairro: 'Não informado',
+    cidade: 'São Leopoldo',
+    estado: 'RS'
 }
 
-console.log('O nome da pessoa é '+pessoa.nome+ ', ela tem '+pessoa.idade+' anos e gosta muito de '+pessoa.generoMusical+'.');
+const end2 = {
+    rua: 'Rua 01',
+    bairro: 'Não informado',
+    cidade: 'Novo Hamburgo',
+    estado: 'RS'
+}
+
+const pessoa = {
+    nome: 'João',
+    idade: '50',
+    generoMusical: 'Bossa Nova',
+    endereco: [end1, end2]
+}
+
+console.log(`O nome da pessoa é ${pessoa.nome}, ele tem ${pessoa.idade} anos e gosta muito de ${pessoa.generoMusical}. Mora na cidade de: ${pessoa.endereco[0].cidade}`)
 */
 
 
