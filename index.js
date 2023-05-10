@@ -140,6 +140,9 @@ const cachorro = {
 	raca: "SRD"
 }
 
+//const novoCachorro = cachorro; = se quiser fazer uma cópia do objeto
+//novoCachorro.nome = 'João'  = se alterasse propriedades de um, alteraria também no outro
+
 const gato = {...cachorro, nome: "Juba"}
 
 const tartaruga = {...gato, nome: gato.nome.replaceAll("a", "o")}
