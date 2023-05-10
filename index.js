@@ -327,7 +327,8 @@ function frutas(fruta){
 }
 
 function disponibilidades (fruta){
-    return fruta.disponibilidade = !fruta.disponibilidade; //retornar um valor para fruta.disponibilidade DIFERENTE do valor da variável (todas true)
+	//fruta.disponibilidade = false;	
+	fruta.disponibilidade = !fruta.disponibilidade; //retornar um valor para fruta.disponibilidade DIFERENTE do valor da variável (todas true)
 }
 
 disponibilidades(fruta1); disponibilidades(fruta2); disponibilidades(fruta3);
