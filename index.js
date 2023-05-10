@@ -258,19 +258,22 @@ console.log(carrinho);
 //1. Crie um função que pergunte ao usuário seu nome, sua idade e sua profissão e depois imprima no console um objeto com essas propriedades. 
 //Depois de imprimir o novo objeto, imprima também o tipo dele para garantir que é um objeto.
 
-function pessoa (nome, idade, profissao){
-   
-    let person = {
-        nome: prompt('Digite seu nome:'),
-        idade: Number(prompt('Digite sua idade:')),
-        profissao: prompt('Digite sua profissão:')
+function cadastrarUsuario (){
+    nome1 = prompt('Informe seu nome:');
+    idade1 = Number(prompt('Informe sua idade'));
+    profissao1 = prompt('Informe sua profissão');
+
+    const user = {
+        nome: nome1,
+        idade: idade1,
+        profissao: profissao1
     }
-    return console.log(typeof person, person); //typeof person para retornar o tipo da variável
+
+    return {user, tipoUser:typeof  user}; //para retornar mais de uma informação: criar um array ou objeto
 
 }
 
-pessoa();
-console.log(typeof pessoa);
+console.log(cadastrarUsuario());
 */
 
 /*
